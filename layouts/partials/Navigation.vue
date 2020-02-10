@@ -83,7 +83,7 @@
                         <ul class="nav">
                            <li class="nav-item">
                                 <nuxt-link :to="{ name: 'search' }" class="nav-link"><i class="far fa-search"></i></nuxt-link>
-                               
+
                             </li>
                             <li class="nav-item" v-if="$auth.loggedIn">
                                 <a href="#" @click.prevent="logout" class="nav-link"><i class="far fa-power-off"></i> Logout</a>
