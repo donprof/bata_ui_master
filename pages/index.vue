@@ -6,9 +6,9 @@
             </slick-slide>
             <slide v-for="(slide, i) in slidescount" :key="i" :index="i">
         </no-ssr> -->
-
+        
         <no-ssr>
-            <carousel-3d :autoplay="true" :disable3d="true" :autoplay-timeout="5000" :display="3" :space="1390" :width="1390" :height="443" :clickable="false" :controls-visible="true">
+            <carousel-3d :autoplay="true" :disable3d="true" :autoplay-timeout="5000" :display="3" :space="1290" :width="1260" :height="443" :clickable="false" :controls-visible="true">
                 <slide v-for="(slide, i) in sliders" :index="i" :key="i">
                     <img :src="slide.imagelink+'banners/'+slide.image">
                 <!-- <span class="title">You know</span> -->
@@ -23,12 +23,14 @@
                 </slide>
             </carousel-3d> -->
         </no-ssr>
-      <section class="slice overflow-hidden">
-            <!-- <div class="pt-5 position-absolute middle right-0 col-lg-7 col-xl-7 d-none d-lg-block">
+
+        <section class="slice slice-sm overflow-hidden">
+            
+            <div class="pt-5 position-absolute middle right-0 col-lg-7 col-xl-7 d-none d-lg-block">
                 <img alt="" src="/img/svg/ladyshopping.svg" class="img-fluid opacity-1">
-            </div> -->
+            </div>
             <!-- SVG shapes background -->
-            <!-- <div class="bg-absolute-cover bg-size--contain d-flex align-items-center opacity-1">
+            <div class="bg-absolute-cover bg-size--contain d-flex align-items-center opacity-1">
                 <figure class="w-100">
 
                     <svg preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 1506.3 578.7" xmlns="http://www.w3.org/2000/svg">
@@ -47,45 +49,63 @@
                         <path class="shape-fill-red" d="M 1084.395 506.137 C 1084.908 504.812 1086.09 503.861 1087.494 503.643 L 1100.645 501.6 C 1102.049 501.381 1103.463 501.929 1104.354 503.036 L 1112.699 513.403 C 1113.59 514.51 1113.823 516.009 1113.31 517.334 L 1108.504 529.744 C 1107.99 531.07 1106.809 532.02 1105.405 532.239 L 1092.254 534.282 C 1090.85 534.5 1089.436 533.953 1088.545 532.845 L 1080.2 522.478 C 1079.309 521.371 1079.076 519.873 1079.589 518.547 L 1084.395 506.137 Z"
                         />
                     </svg>
+
                 </figure>
-            </div> -->
+            </div>
+
+
 
             <div class="container position-relative zindex-100">
-                <div class="mb-md text-center">
-                    <h2 class="mt-4">New <br ><strong class="font-weight-700">Arrivals</strong>.</h2>
+                <div class="row row-grid">
+                    <div class="col-lg-4 col-xs-6 mt-4" v-for="ad in adverts" :key="ad.id">
+                        <nuxt-link :to="{ name: 'categories-slug', params: { slug: ad.slug } }" class="card border-0" data-animate-hover="1">
+                            <div class="animate-this">
+                                <img :alt="ad.blinker" class="rounded z-depth-3 img-full" :src="ad.imagelink+'offer/'+ad.image">
+                                <span class="mask bg-dark opacity-1"></span>
+                                <span :class="'mask mask--hover opacity-4 bg-gradient-'+ad.gradient"></span>
+                                <div class="card-img-overlay d-flex">
+                                    <div class="col pt-2">
+                                        <h1 class="h1 text-white text-capitalize mb-1">{{ad.title}}</h1>
+                                        <h2 class="h1 text-capitalize mb-1 animated pulse infinite text-danger">{{ad.blinker}}</h2>
+                                        <h6 class="text-white">{{ad.description}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </nuxt-link>
+                    </div>
                 </div>
 
-                <section class="slice slice-sm bg-transparent" id="sct-products">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-3 col-sm-6 mb-5" v-for="product in latest" :key="product.slug">
-                                <Product :product="product" />
-                            </div>
-                        </div>
+                <!-- <div class="mb-md text-center">
+                    <span class="badge badge-lg badge-success badge-pill">Latest shoes</span>
+                    <h3 class="mt-4">Latest <strong class="font-weight-700">arrivals</strong></h3>
+                </div> -->
 
-                        <!-- <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item"><a class="page-link" href="#"><i class="far fa-angle-left"></i></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">2</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">4</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">5</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">6</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#"><i class="far fa-angle-right"></i></a>
-                                </li>
-                            </ul>
-                        </nav> -->
+            </div>
+        </section>
+
+        <section v-for="sl in salesbanner" :key="sl.id" class="slice slice-sm bg-cover bg-size--cover" :style="'background-position: 15% 75%; background-image: url('+sl.imagelink+'/wavebanner/'+sl.image+')'">
+            <div class="shape-container" data-shape-style="wavify" data-shape-position="top" data-shape-orientation="inverse">
+                <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="shape-fill-white" data-toggle="wavify">
+                    <defs></defs>
+                    <path d="M 0 87.32557265070729 C 128 70.50725400510667 128 70.50725400510667 256 78.91641332790697 C 384 87.32557265070729 384 87.32557265070729 512 67.39249430284666 C 640 47.459415954986056 640 47.459415954986056 768 56.77945203621193 C 896 66.0994881174378 896 66.0994881174378 1024 50.7847275308815 C 1152 35.46996694432518 1152 35.46996694432518 1280 61.71597974058941 L 1280 4655.64 L 0 4655.64 Z" class="shape-fill-white" fill="rgba(255,255,255, 0.20)"></path>
+                </svg>
+            </div>
+            <div class="container py-xl">
+                <div class="row">
+                    <div class="col-lg-6 bg-white rounded opacity-8">
+                        <nuxt-link :to="{ name: 'categories-slug', params: { slug: sl.slug } }">
+                            <h2 class="h1 text-dark opacity-9">{{sl.title}}</h2>
+                            <h2 class="h1 text-danger d-block opacity-9"><strong>{{sl.offer}}</strong></h2>
+                            <p class="lead text-dark mt-4 opacity-9">{{sl.description}}</p>
+                        </nuxt-link>
                     </div>
-                </section>
-
+                </div>
+            </div>
+            <div class="shape-container" data-shape-style="wavify" data-shape-position="bottom">
+                <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="shape-fill-white" data-toggle="wavify">
+                    <defs></defs>
+                    <path d="M 0 87.32525502917767 C 128 70.50628375346247 128 70.50628375346247 256 78.91576939132007 C 384 87.32525502917767 384 87.32525502917767 512 67.39174899677842 C 640 47.458242964379174 640 47.458242964379174 768 56.77886571751457 C 896 66.09948847064999 896 66.09948847064999 1024 50.78450501754451 C 1152 35.469521564439056 1152 35.469521564439056 1280 61.71528280041139 L 1280 4655.64 L 0 4655.64 Z" class="shape-fill-white" fill="rgba(255,255,255, 0.20)"></path>
+                </svg>
             </div>
         </section>
 
@@ -118,72 +138,7 @@
 
             <div class="container position-relative zindex-100">
                 <div class="mb-md text-center">
-                    <h3 class="mt-4">Gifts <br><strong class="font-weight-700">For Her</strong>.</h3>
-                </div>
-
-                <section class="slice slice-sm bg-transparent" id="sct-products">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-3 col-sm-6 mb-5" v-for="product in latest" :key="product.slug">
-                                <Product :product="product" />
-                            </div>
-                        </div>
-
-                        <!-- <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item"><a class="page-link" href="#"><i class="far fa-angle-left"></i></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">2</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">4</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">5</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">6</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#"><i class="far fa-angle-right"></i></a>
-                                </li>
-                            </ul>
-                        </nav> -->
-                    </div>
-                </section>
-
-            </div>
-        </section>
-      <section class="slice overflow-hidden">
-            <!-- <div class="pt-5 position-absolute middle right-0 col-lg-7 col-xl-7 d-none d-lg-block">
-                <img alt="" src="/img/svg/ladyshopping.svg" class="img-fluid opacity-1">
-            </div> -->
-            <!-- SVG shapes background -->
-            <!-- <div class="bg-absolute-cover bg-size--contain d-flex align-items-center opacity-1">
-                <figure class="w-100">
-
-                    <svg preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 1506.3 578.7" xmlns="http://www.w3.org/2000/svg">
-                        <path class="shape-fill-purple" d="M 147.269 295.566 C 147.914 293.9 149.399 292.705 151.164 292.431 L 167.694 289.863 C 169.459 289.588 171.236 290.277 172.356 291.668 L 182.845 304.699 C 183.965 306.091 184.258 307.974 183.613 309.64 L 177.572 325.239 C 176.927 326.905 175.442 328.1 173.677 328.375 L 157.147 330.943 C 155.382 331.217 153.605 330.529 152.485 329.137 L 141.996 316.106 C 140.876 314.714 140.583 312.831 141.228 311.165 L 147.269 295.566 Z"
-                        />
-                        <path class="shape-fill-green" d="M 92.927 474.881 C 93.309 473.896 94.187 473.19 95.23 473.028 L 105.002 471.51 C 106.045 471.347 107.096 471.754 107.758 472.577 L 113.959 480.28 C 114.621 481.103 114.794 482.216 114.413 483.201 L 110.841 492.423 C 110.46 493.408 109.582 494.114 108.539 494.277 L 98.767 495.795 C 97.723 495.957 96.673 495.55 96.011 494.727 L 89.81 487.024 C 89.148 486.201 88.975 485.088 89.356 484.103 L 92.927 474.881 Z"
-                        />
-                        <path class="shape-fill-teal" d="M 34.176 36.897 C 34.821 35.231 36.306 34.036 38.071 33.762 L 54.601 31.194 C 56.366 30.919 58.143 31.608 59.263 32.999 L 69.752 46.03 C 70.872 47.422 71.165 49.305 70.52 50.971 L 64.479 66.57 C 63.834 68.236 62.349 69.431 60.584 69.706 L 44.054 72.274 C 42.289 72.548 40.512 71.86 39.392 70.468 L 28.903 57.437 C 27.783 56.045 27.49 54.162 28.135 52.496 L 34.176 36.897 Z"
-                        />
-                        <path class="shape-fill-blue" d="M 975.636 9.762 C 976.101 8.561 977.171 7.7 978.443 7.502 L 990.354 5.652 C 991.626 5.454 992.907 5.95 993.714 6.953 L 1001.272 16.343 C 1002.079 17.346 1002.29 18.703 1001.826 19.903 L 997.472 31.144 C 997.008 32.344 995.938 33.205 994.666 33.403 L 982.754 35.254 C 981.483 35.451 980.202 34.956 979.395 33.953 L 971.837 24.563 C 971.03 23.559 970.818 22.203 971.283 21.002 L 975.636 9.762 Z"
-                        />
-                        <path class="shape-fill-gray-dark" d="M 1417.759 409.863 C 1418.404 408.197 1419.889 407.002 1421.654 406.728 L 1438.184 404.16 C 1439.949 403.885 1441.726 404.574 1442.846 405.965 L 1453.335 418.996 C 1454.455 420.388 1454.748 422.271 1454.103 423.937 L 1448.062 439.536 C 1447.417 441.202 1445.932 442.397 1444.167 442.672 L 1427.637 445.24 C 1425.872 445.514 1424.095 444.826 1422.975 443.434 L 1412.486 430.403 C 1411.366 429.011 1411.073 427.128 1411.718 425.462 L 1417.759 409.863 Z"
-                        />
-                        <path class="shape-fill-orange" d="M 1313.903 202.809 C 1314.266 201.873 1315.1 201.201 1316.092 201.047 L 1325.381 199.604 C 1326.373 199.449 1327.372 199.837 1328.001 200.618 L 1333.895 207.941 C 1334.525 208.723 1334.689 209.782 1334.327 210.718 L 1330.932 219.484 C 1330.57 220.42 1329.735 221.092 1328.743 221.246 L 1319.454 222.689 C 1318.462 222.843 1317.464 222.457 1316.834 221.674 L 1310.94 214.351 C 1310.31 213.569 1310.146 212.511 1310.508 211.575 L 1313.903 202.809 Z"
-                        />
-                        <path class="shape-fill-red" d="M 1084.395 506.137 C 1084.908 504.812 1086.09 503.861 1087.494 503.643 L 1100.645 501.6 C 1102.049 501.381 1103.463 501.929 1104.354 503.036 L 1112.699 513.403 C 1113.59 514.51 1113.823 516.009 1113.31 517.334 L 1108.504 529.744 C 1107.99 531.07 1106.809 532.02 1105.405 532.239 L 1092.254 534.282 C 1090.85 534.5 1089.436 533.953 1088.545 532.845 L 1080.2 522.478 C 1079.309 521.371 1079.076 519.873 1079.589 518.547 L 1084.395 506.137 Z"
-                        />
-                    </svg>
-                </figure>
-            </div> -->
-
-            <div class="container position-relative zindex-100">
-                <div class="mb-md text-center">
-                    <h3 class="mt-4">Gifts <br> <strong class="font-weight-700">For Him</strong>.</h3>
+                    <h3 class="mt-4">New <strong class="font-weight-700">arrivals</strong>.</h3>
                 </div>
 
                 <section class="slice slice-sm bg-transparent" id="sct-products">
@@ -318,7 +273,7 @@ export default {
                 {src: '/libs/jqueryplugin/jquery.min.js',body: true},
                 {src: '/libs/bootstrap/bootstrap.bundle.min.js',body: true},
                 {src: '/libs/in-view/in-view.min.js',body: true},
-
+                
                 {src: '/libs/sticky-kit/sticky-kit.min.js',body: true},
                 {src: '/libs/select2/select2.min.js',body: true},
 
@@ -388,11 +343,11 @@ export default {
         next() {
             this.$refs.slick.next();
         },
-
+ 
         prev() {
             this.$refs.slick.prev();
         },
-
+ 
         reInit() {
             // Helpful if you have to deal with v-for to update dynamic lists
             this.$nextTick(() => {
