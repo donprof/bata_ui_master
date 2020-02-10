@@ -4820,7 +4820,7 @@ input[type=submit].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  border: .0625rem solid rgba(0, 0, 0, .08);
+  border-bottom: .0625rem solid rgb(15, 5, 5);
   border-radius: .375rem;
   background-color: #fff;
   background-clip: border-box
@@ -13863,7 +13863,7 @@ button.bg-lighter:hover {
   font-size: 1rem;
   font-weight: 600;
   display: block;
-  color: #adb5bd
+  color: #343a40
 }
 
 .card-product .product-colors a {

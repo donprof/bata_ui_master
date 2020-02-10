@@ -71,7 +71,77 @@
                 </div>
             </section>
         </template>
+        <template v-if="product.brand_id == 18">
+            <section class="slice pt-sm pb-4 d-flex align-items-end  bg-cover bg-size--cover" style="background-image: url('/img/backgrounds/Safari-Shoe.jpg');">
+                <span class="mask bg-danger opacity-0"></span>
+                <div class="container pt-lg">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row align-items-center mb-4">
+                                <div class="col-lg-5 mb-4 mb-lg-0">
+                                <span class="h2 mb-0 text-white d-block" style="text-transform: capitalize;">{{ product.name }}</span>
+                                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                                    <li class="breadcrumb-item">
+                                    <nuxt-link :to="{ name: 'index' }" class="text-normal">
+                                        Home
+                                    </nuxt-link>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                    <span class="text-light">Category</span>
+                                    <!-- <nuxt-link :to="{ name: 'products' }" class="text-normal">
+                                        Products
+                                    </nuxt-link> -->
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                    <span class="text-light" style="text-transform: capitalize;">{{path}}</span>
+                                    <!-- <nuxt-link :to="{ name: path }" class="text-normal" style="text-transform: capitalize;">
+                                        {{path}}
+                                    </nuxt-link> -->
+                                    </li>
+                                </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
 
+        <template v-if="product.brand_id == 13">
+            <section class="slice pt-sm pb-4 d-flex align-items-end  bg-cover bg-size--cover" style="background-image: url('/img/backgrounds/TOUGHEES_Bground.jpg');">
+                <span class="mask bg-danger opacity-0"></span>
+                <div class="container pt-lg">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row align-items-center mb-4">
+                                <div class="col-lg-5 mb-4 mb-lg-0">
+                                <span class="h2 mb-0 text-white d-block" style="text-transform: capitalize;">{{ product.name }}</span>
+                                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                                    <li class="breadcrumb-item">
+                                    <nuxt-link :to="{ name: 'index' }" class="text-normal">
+                                        Home
+                                    </nuxt-link>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                    <span class="text-light">Category</span>
+                                    <!-- <nuxt-link :to="{ name: 'products' }" class="text-normal">
+                                        Products
+                                    </nuxt-link> -->
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                    <span class="text-light" style="text-transform: capitalize;">{{path}}</span>
+                                    <!-- <nuxt-link :to="{ name: path }" class="text-normal" style="text-transform: capitalize;">
+                                        {{path}}
+                                    </nuxt-link> -->
+                                    </li>
+                                </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
         <section class="slice slice-lg" id="sct-products">
             <div class="container">
                 <div class="row">
@@ -162,7 +232,7 @@
                                                 <small class="d-block font-weight-bold text-dark mb-2">Quantity:</small>
                                                 <el-input-number v-model="form.quantity" :min="1" :max="form.variation.stock_count"></el-input-number>
                                             </div>
-                                            
+
                                             <div class="row mt-4">
                                                 <div class="col-8">
                                                     <button @click.prevent="add" type="button" class="btn btn-success btn-sm">Add to cart</button>
@@ -223,7 +293,7 @@
         </section>
 
         <section class="slice slice-md delimiter-top">
-            
+
             <!-- <div class="pt-5 position-absolute middle right-0 col-lg-7 col-xl-7 d-none d-lg-block">
                 <img alt="" src="/img/svg/ladyshopping.svg" class="img-fluid" style="opacity: .1;">
             </div> -->

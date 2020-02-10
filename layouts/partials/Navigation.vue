@@ -61,46 +61,44 @@
         <!-- Topbar -->
         <div id="navbar-top-main" class="navbar-top navbar-dark bg-danger p-0">
             <div class="container">
-                <div class="navbar-nav align-items-center">
-                    <div class="d-none d-lg-inline-block">
 
+
+
+                <div class="navbar-nav align-items-center">
+                   <nuxt-link :to="{ name: 'index' }" class="navbar-brand mr-lg-5">
+                    <template v-if="navstyle == true">
+                        <img alt="Image placeholder" src="/img/brand/red.png" style="height: 50px;">
+                    </template>
+                    <template v-else>
+                        <img alt="Image placeholder" src="/img/brand/white.png" style="height: 50px;">
+                    </template>
+                </nuxt-link>
+                    <div class="d-none d-lg-inline-block">
                         <span class="navbar-text mr-3 text-uppercase"><a href="https://api.whatsapp.com/send?phone=254726668941&text=Hi%20Bata,%20please%20help%20me%20out.%20My%20query%20is" target="_blank">Contact us</a></span>
+                        <span class="navbar-text mr-3 text-uppercase"> <a class="nav-link text-uppercase" target="_blank" href="https://www.giift.com/offer2/card/prepare/bata-kenya">Gift card</a></span>
+                         <span class="navbar-text mr-3 text-uppercase">  <a class="nav-link text-uppercase" target="_blank" href="http://eu.sharingan.capillarytech.com/app/Bata_Microsite#!/authlogin">Bata club</a></span>
                     </div>
-                    <div>
-                        <ul class="nav">
-                            <li class="nav-item dropdown ml-lg-2 dropdown-animate" data-toggle="hover">
-                                <a class="nav-link px-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="d-none d-lg-inline-block text-uppercase">Payment Methods</span>
-                                    <span class="d-lg-none"><img alt="Image placeholder" src="/img/brand/white.png" style="height: 50px;"></span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-sm dropdown-menu-arrow">
-                                    <a href="javascript:void(0);" class="dropdown-item">M-Pesa</a>
-                                    <a href="javascript:void(0);" class="dropdown-item">Visa</a>
-                                    <a href="javascript:void(0);" class="dropdown-item">Mastercard</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+<!--
                     <div class="ml-auto">
                         <ul class="nav">
-                            <!-- <li class="nav-item">
+                            <li class="nav-item">
                                 <nuxt-link :to="{ name: 'bata_club' }" class="nav-link">Bata Club</nuxt-link>
-                            </li> -->
-                            <li class="nav-item">
-                                <a class="nav-link text-uppercase" target="_blank" href="https://www.giift.com/offer2/card/prepare/bata-kenya">Gift card</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase" target="_blank" href="http://eu.sharingan.capillarytech.com/app/Bata_Microsite#!/authlogin">Bata club</a>
+
                             </li>
-                            <!-- <li class="nav-item">
+                            <li class="nav-item">
+
+                            </li>
+                            <<li class="nav-item">
                                 <a class="nav-link" href="#">Our Events</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Blog</a>
-                            </li> -->
+                            </li>
                             <li class="nav-item">
                                 <nuxt-link :to="{ name: 'search' }" class="nav-link"><i class="far fa-search"></i></nuxt-link>
-                                <!-- <a href="#" class="nav-link" data-action="search-open" data-target="#search-main"><i class="far fa-search"></i></a> -->
+                                <<a href="#" class="nav-link" data-action="search-open" data-target="#search-main"><i class="far fa-search"></i></a>
                             </li>
                             <li class="nav-item" v-if="$auth.loggedIn">
                                 <a href="#" @click.prevent="logout" class="nav-link"><i class="far fa-power-off"></i> Logout</a>
@@ -109,7 +107,7 @@
                                 <nuxt-link :to="{ name: 'locations' }" class="nav-link"><i class="fas fa-map-marked-alt"></i></nuxt-link>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -117,14 +115,8 @@
         <!-- Main navbar -->
         <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-danger" id="navbar-main">
             <div class="container">
-                <nuxt-link :to="{ name: 'index' }" class="navbar-brand mr-lg-5">
-                    <template v-if="navstyle == true">
-                        <img alt="Image placeholder" src="/img/brand/red.png" style="height: 50px;">
-                    </template>
-                    <template v-else>
-                        <img alt="Image placeholder" src="/img/brand/white.png" style="height: 50px;">
-                    </template>
-                </nuxt-link>
+
+
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -193,7 +185,7 @@
                         </li>
                     </ul>
 
-                    
+
 
                     <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                         <template v-if="!$auth.loggedIn">

@@ -65,7 +65,7 @@
             </section>
         </template>
 
-        
+
         <!-- {{banner}} -->
         <section class="slice slice-lg" id="sct-products">
             <div class="container">
@@ -157,7 +157,7 @@
                                                 <small class="d-block font-weight-bold text-dark mb-2">Quantity:</small>
                                                 <el-input-number v-model="form.quantity" :min="1" :max="form.variation.stock_count"></el-input-number>
                                             </div>
-                                            
+
                                             <div class="row mt-4">
                                                 <div class="col-8">
                                                     <button @click.prevent="add" type="button" class="btn btn-success btn-sm">Add to cart</button>
@@ -218,7 +218,7 @@
         </section>
 
         <section class="slice slice-md delimiter-top">
-            
+
             <!-- <div class="pt-5 position-absolute middle right-0 col-lg-7 col-xl-7 d-none d-lg-block">
                 <img alt="" src="/img/svg/ladyshopping.svg" class="img-fluid" style="opacity: .1;">
             </div> -->
@@ -347,7 +347,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section> -->
