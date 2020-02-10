@@ -78,27 +78,12 @@
                         <span class="navbar-text mr-3 text-uppercase"> <a class="nav-link text-uppercase" target="_blank" href="https://www.giift.com/offer2/card/prepare/bata-kenya">Gift card</a></span>
                          <span class="navbar-text mr-3 text-uppercase">  <a class="nav-link text-uppercase" target="_blank" href="http://eu.sharingan.capillarytech.com/app/Bata_Microsite#!/authlogin">Bata club</a></span>
                     </div>
-<!--
+
                     <div class="ml-auto">
                         <ul class="nav">
-                            <li class="nav-item">
-                                <nuxt-link :to="{ name: 'bata_club' }" class="nav-link">Bata Club</nuxt-link>
-                            </li>
-                            <li class="nav-item">
-
-                            </li>
-                            <li class="nav-item">
-
-                            </li>
-                            <<li class="nav-item">
-                                <a class="nav-link" href="#">Our Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
+                           <li class="nav-item">
                                 <nuxt-link :to="{ name: 'search' }" class="nav-link"><i class="far fa-search"></i></nuxt-link>
-                                <<a href="#" class="nav-link" data-action="search-open" data-target="#search-main"><i class="far fa-search"></i></a>
+                               
                             </li>
                             <li class="nav-item" v-if="$auth.loggedIn">
                                 <a href="#" @click.prevent="logout" class="nav-link"><i class="far fa-power-off"></i> Logout</a>
@@ -107,7 +92,7 @@
                                 <nuxt-link :to="{ name: 'locations' }" class="nav-link"><i class="fas fa-map-marked-alt"></i></nuxt-link>
                             </li>
                         </ul>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>

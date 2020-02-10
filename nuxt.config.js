@@ -38,7 +38,7 @@ module.exports = {
 
       { hid: 'keyword', name: 'keyword', content: 'Bata, Bata Shoe, Bata kenya, Shoes, Shoe manufacturer, Kenya shoes, Shop online, Shop online shoes, Shoes online' },
       { hid: 'description', name: 'description', content: 'Official leading shoe manufacturer & retailer in Kenya. Shop online' },
-      
+
       { name: 'msapplication-TileColor', content: '#A8011F' },
       { name: 'theme-color', content: '#A8011F' },
 
@@ -61,7 +61,7 @@ module.exports = {
     'localforage-nuxt',
     '@nuxtjs/pwa',
     // '@nuxtjs/localforage',
-    
+
   ],
   pwa: {
     manifest: {
@@ -135,7 +135,7 @@ module.exports = {
       // {src: '/js/paypal.js',body: true},
       // {src: '/libs/bootstrap/dist/js/bootstrap.bundle.min.js',body: true},
       // {src: '/libs/in-view/dist/in-view.min.js',body: true},
-      
+
       // {src: '/libs/tweenmax/tweenmax.min.js',body: true},
       // {src: '/libs/wavify/wavify.min.js',body: true},
       // {src: '/js/theme.min.js',body: true},
@@ -145,7 +145,7 @@ module.exports = {
   */
   loading: {
     color: '#2CB888',
-    height: '3px'
+    height: '5px'
   },
   /*
   ** Build configuration
