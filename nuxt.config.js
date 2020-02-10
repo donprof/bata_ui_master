@@ -14,7 +14,7 @@ module.exports = {
       {name: 'author', content: 'Bata Kenya'},
 
       { property: 'og:type', content: 'Website' },
-      { property: 'og:title', content: 'Bata Kenya' },
+      { property: 'og:title', content: 'Bata Kenya.' },
       { property: 'og:site_name', content: 'Bata Kenya' },
       { property: 'og:url', content: 'http://baatkenya.com' },
       { property: 'og:description', content: 'Official leading shoe manufacturer & retailer in Kenya. Shop online' },
