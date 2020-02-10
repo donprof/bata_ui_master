@@ -21,6 +21,13 @@
                 </div>
             </section>
         </template>
+            <template v-if="brandid == 13">
+            <section class="slice p-0 my-0">
+                <div class="container-fluid p-0 text-center">
+                    <img class="img-fluid" src="/img/backgrounds/BATA_TOUGHEES.jpg" alt="">
+                </div>
+            </section>
+        </template>
         <section class="slice pb-0 delimiter-top">
             <div class="container">
                 <div class="row row-grid">
@@ -36,7 +43,7 @@
                             Designed with active children in mind: their limitless energy means that whether they are running, kicking a football, jumping or zestful fun-times around, their shoes - particularly their school shoes - need to be able to go the distance.
                             Made with high-quality non-polish leather, Toughees are durable, strong, reliable, easy to clean, affordable and offer breathable comfort for growing feet, who are born to live tough.</p>
                         </blockquote>
-                        <blockquote class="py-1 px-5 rounded-right" v-if="brandid == 12">
+                        <blockquote class="py-1 px-5 rounded-right" v-if="brandid == 18">
                             <h3 class="h2 font-weight-700">PATA PATA STORY</h3>
                             <p class="lead">
                               Embrace the warmth of Africa with our vibrant and funky coloured PataPata.Originally registered in Kenya in 1981, PataPata is the ultimate expression of African culture, colour, rhythm and positive vibe.

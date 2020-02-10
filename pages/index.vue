@@ -6,9 +6,9 @@
             </slick-slide>
             <slide v-for="(slide, i) in slidescount" :key="i" :index="i">
         </no-ssr> -->
-        
+
         <no-ssr>
-            <carousel-3d :autoplay="true" :disable3d="true" :autoplay-timeout="5000" :display="3" :space="1290" :width="1260" :height="443" :clickable="false" :controls-visible="true">
+            <carousel-3d :autoplay="true" :disable3d="true" :autoplay-timeout="5000" :display="2" :space="1440" :width="1440" :height="500" :clickable="true" :controls-visible="true">
                 <slide v-for="(slide, i) in sliders" :index="i" :key="i">
                     <img :src="slide.imagelink+'banners/'+slide.image">
                 <!-- <span class="title">You know</span> -->
@@ -25,7 +25,7 @@
         </no-ssr>
 
         <section class="slice slice-sm overflow-hidden">
-            
+
             <div class="pt-5 position-absolute middle right-0 col-lg-7 col-xl-7 d-none d-lg-block">
                 <img alt="" src="/img/svg/ladyshopping.svg" class="img-fluid opacity-1">
             </div>
@@ -138,7 +138,7 @@
 
             <div class="container position-relative zindex-100">
                 <div class="mb-md text-center">
-                    <h3 class="mt-4">New <strong class="font-weight-700">arrivals</strong>.</h3>
+                    <h3 class="mt-4">NEW <strong class="font-weight-700">ARRIVALS</strong>.</h3>
                 </div>
 
                 <section class="slice slice-sm bg-transparent" id="sct-products">
@@ -273,7 +273,7 @@ export default {
                 {src: '/libs/jqueryplugin/jquery.min.js',body: true},
                 {src: '/libs/bootstrap/bootstrap.bundle.min.js',body: true},
                 {src: '/libs/in-view/in-view.min.js',body: true},
-                
+
                 {src: '/libs/sticky-kit/sticky-kit.min.js',body: true},
                 {src: '/libs/select2/select2.min.js',body: true},
 
@@ -343,11 +343,11 @@ export default {
         next() {
             this.$refs.slick.next();
         },
- 
+
         prev() {
             this.$refs.slick.prev();
         },
- 
+
         reInit() {
             // Helpful if you have to deal with v-for to update dynamic lists
             this.$nextTick(() => {
