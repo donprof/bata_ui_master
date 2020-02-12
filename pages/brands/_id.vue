@@ -17,21 +17,21 @@
          <template v-if="brandid == 18">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/patapata-lp.jpg" alt="">
+                    <img class="img-fluid" src="/img/backgrounds/patapata-LP.jpg" alt="">
                 </div>
             </section>
         </template>
             <template v-if="brandid == 13">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/sandak-lp.jpg" alt="">
+                    <img class="img-fluid" src="/img/backgrounds/Sandak-LP.jpg" alt="">
                 </div>
             </section>
         </template>
          <template v-if="brandid == 16">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/industrial-lp.jpg" alt="">
+                    <img class="img-fluid" src="/img/backgrounds/Industrial-Lp.jpg" alt="">
                 </div>
             </section>
         </template>
