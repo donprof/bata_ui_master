@@ -17,14 +17,21 @@
          <template v-if="brandid == 18">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/BATA_TOUGHEES.jpg" alt="">
+                    <img class="img-fluid" src="/img/backgrounds/patapata-lp.jpg" alt="">
                 </div>
             </section>
         </template>
             <template v-if="brandid == 13">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/BATA_TOUGHEES.jpg" alt="">
+                    <img class="img-fluid" src="/img/backgrounds/sandak-lp.jpg" alt="">
+                </div>
+            </section>
+        </template>
+         <template v-if="brandid == 16">
+            <section class="slice p-0 my-0">
+                <div class="container-fluid p-0 text-center">
+                    <img class="img-fluid" src="/img/backgrounds/industrial-lp.jpg" alt="">
                 </div>
             </section>
         </template>
@@ -56,6 +63,15 @@ Whether you are on vacation or puttering around the house, this fun and vibrant 
                             <h3 class="h2 font-weight-700">SANDAK STORY</h3>
                             <p class="lead">
                               Set your feet free with an all weather, simple, and stylish shoe, made of superior quality PVC. Sandak offers comfort like no other from an easy day at home, in the garden or when you are out and about; there is a style for the entire family.
+
+                            </p>
+
+                        </blockquote>
+                         <blockquote class="py-1 px-5 rounded-right" v-if="brandid == 16">
+                            <h3 class="h2 font-weight-700">INDUSTRIALS STORY</h3>
+                            <p class="lead">
+
+                              Being a professional means more than being excxellent a what you do. it also means taking responsibility for yourself and your coworkers especially in potentially dangerous environments that is why we want you to stand strong,walk with confidence and stay safe under all circumstances that starts with the safety shoe.
 
                             </p>
 
