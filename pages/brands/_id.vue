@@ -28,7 +28,7 @@
                 </div>
             </section>
         </template>
-         <template v-if="brandid == 16">
+         <template v-if="brandid == 17">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
                     <img class="img-fluid" src="/img/backgrounds/Industrial-Lp.jpg" alt="">
@@ -67,7 +67,7 @@ Whether you are on vacation or puttering around the house, this fun and vibrant 
                             </p>
 
                         </blockquote>
-                         <blockquote class="py-1 px-5 rounded-right" v-if="brandid == 16">
+                         <blockquote class="py-1 px-5 rounded-right" v-if="brandid == 17">
                             <h3 class="h2 font-weight-700">INDUSTRIALS STORY</h3>
                             <p class="lead">
 

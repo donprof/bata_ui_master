@@ -144,7 +144,7 @@
             </section>
         </template>
 
-        <template v-if="product.brand_id == 16">
+        <template v-if="product.brand_id == 17">
             <section class="slice pt-sm pb-4 d-flex align-items-end  bg-cover bg-size--cover" style="background-image: url('/img/backgrounds/Industrial-Lp-Background.jpg');">
                 <span class="mask bg-danger opacity-0"></span>
                 <div class="container pt-lg">
