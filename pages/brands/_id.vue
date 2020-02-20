@@ -28,7 +28,7 @@
                 </div>
             </section>
         </template>
-         <template v-if="brandid == 17">
+         <template v-if="brandid == 16">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
                     <img class="img-fluid" src="/img/backgrounds/Industrial-Lp.jpg" alt="">
@@ -67,8 +67,8 @@ Whether you are on vacation or puttering around the house, this fun and vibrant 
                             </p>
 
                         </blockquote>
-                         <blockquote class="py-1 px-5 rounded-right" v-if="brandid == 17">
-                            <h3 class="h2 font-weight-700">INDUSTRIALS STORY</h3>
+                         <blockquote class="py-1 px-5 rounded-right" v-if="brandid == 16">
+                            <h3 class="h2 font-weight-700">BATA INDUSTRIALS STORY</h3>
                             <p class="lead">
 
                               Being a professional means more than being excxellent a what you do. it also means taking responsibility for yourself and your coworkers especially in potentially dangerous environments that is why we want you to stand strong,walk with confidence and stay safe under all circumstances that starts with the safety shoe.
