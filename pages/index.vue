@@ -304,7 +304,7 @@
                 <a href="/products/amy-red-l-aldo-7510606" class="card-title">
                   <div class="card-image">
                     <span>
-                      <img alt="SUPRIME" src="img/Ladies/amy-red-l-aldo-7510606.jpg"
+                      <img alt="SUPRIME" src="img/ladies/amy-red-l-aldo-7510606.jpg"
                         class="img-center fadeInDown" width="100%" height="100%"/>
                     </span>
                   </div>
@@ -339,7 +339,7 @@
                  <a href="/products/kaitlyn-insolia-6785510" class="card-title">
                   <div class="card-image">
                     <span>
-                      <img alt="SUPRIME" src="img/LADIES/kaitlyn-insolia-6785510.jpg"
+                      <img alt="SUPRIME" src="img/ladies/kaitlyn-insolia-6785510.jpg"
                         class="img-center fadeInDown" width="100%" height="100%"/>
                     </span>
                   </div>
@@ -417,7 +417,7 @@
                 <a href="/products/agrifoglio-5646248" class="card-title">
                   <div class="card-image">
                     <span>
-                      <img alt="SUPRIME" src="img/KIDS/agrifoglio-5646248.jpg"
+                      <img alt="SUPRIME" src="img/kids/agrifoglio-5646248.jpg"
                         class="img-center fadeInDown" width="100%" height="100%"/>
                     </span>
                   </div>
@@ -435,7 +435,7 @@
                 <a href="/products/bibi-6155332" class="card-title">
                   <div class="card-image">
                     <span>
-                      <img alt="SUPRIME" src="img/KIDS/bibi-6155332.jpg"
+                      <img alt="SUPRIME" src="img/kids/bibi-6155332.jpg"
                         class="img-center fadeInDown" width="100%" height="100%"/>
                     </span>
                   </div>
@@ -453,7 +453,7 @@
                  <a href="/products/ulfr-1396028" class="card-title">
                   <div class="card-image">
                     <span>
-                      <img alt="SUPRIME" src="img/KIDS/ulfr-1396028.jpg"
+                      <img alt="SUPRIME" src="img/kids/ulfr-1396028.jpg"
                         class="img-center fadeInDown" width="100%" height="100%"/>
                     </span>
                   </div>
@@ -471,7 +471,7 @@
                 <a href="/products/harmeet-1515966" class="card-title">
                   <div class="card-image">
                     <span>
-                      <img alt="SUPRIME" src="img/KIDS/harmeet-1515966.jpg"
+                      <img alt="SUPRIME" src="img/kids/harmeet-1515966.jpg"
                         class="img-center fadeInDown" width="100%" height="100%"/>
                     </span>
                   </div>
