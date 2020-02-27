@@ -4773,7 +4773,7 @@ input[type=submit].btn-block {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, .85)
+  color: rgba(0, 0, 0, .85)
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -4806,7 +4806,7 @@ input[type=submit].btn-block {
 }
 
 .navbar-dark .navbar-text a {
-  color: #fff
+  color: #000
 }
 
 .navbar-dark .navbar-text a:focus,
@@ -6887,7 +6887,7 @@ button.bg-warning:hover {
 }
 
 .bg-danger {
-  background-color: #d81417 !important
+  background-color: #ffff !important
 }
 
 a.bg-danger:focus,

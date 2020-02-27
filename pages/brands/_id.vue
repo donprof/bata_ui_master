@@ -1,5 +1,12 @@
 <template>
     <main>
+         <template v-if="brandid == 3">
+            <section class="slice p-0 my-0">
+                <div class="container-fluid p-0 text-center">
+                    <img class="img-fluid" src="/img/backgrounds/Bata-LP.jpg" alt="">
+                </div>
+            </section>
+        </template>
         <template v-if="brandid == 10">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
@@ -39,6 +46,17 @@
             <div class="container">
                 <div class="row row-grid">
                     <div class="col-lg-12">
+                       <blockquote class="py-1 px-5 rounded-right" v-if="brandid == 13">
+                            <h3 class="h2 font-weight-700">BATA STORY</h3>
+                            <p class="lead">
+
+                              Innovation has been the foundation of our business since 1894.
+                               Our founder Tomáš Bata had a vision to <i>shoe mankind</i> by making high-quality, affordably priced footwear available to everyone. Tomáš dramatically changed the global shoe industry by creating hundreds of innovative advancements in shoe design, manufacturing processes and employee work conditions with his paradigm-breaking and socially conscious approach.
+                              Love Living In Bata Since 1894
+
+                            </p>
+
+                        </blockquote>
                         <blockquote class="py-1 px-5 rounded-right" v-if="brandid == 10">
                             <h3 class="h2 font-weight-700">SAFARI STORY</h3>
                             <p class="lead">There is only one way to see Africa-in the comfort of your classic Bata Safari Boots, the legendary boots that say you know Africa. The basic design has remained unchanged over the years. Clean, simple lines with a timeless, functional aesthetic appeal. Hand stitched with nylon to resist moisture, and with solid rust proof brass eyelets. The leather uppers can take the beating out in the bush but still look good after just a little brushing. Supremely comfortable, offering ankle protection. The thick rubber soles make them quiet, thus ideal boots for walking in the bush. Experience the age-old African adventure in your Bata Safari Boots.</p>
