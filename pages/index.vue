@@ -8,7 +8,7 @@
     </no-ssr>-->
  <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/Club.jpg" width="100%" alt="">
+                    <img class="img-fluid" src="/img/backgrounds/newarrivals.jpg" width="100%" alt="">
                 </div>
             </section>
     <no-ssr>
