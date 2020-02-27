@@ -3,56 +3,57 @@
          <template v-if="brandid == 3">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/Bata-LP.jpg" alt="">
+                    <img class="img-fluid" src="/img/backgrounds/Bata-LP.jpg" width="100%" alt="">
                 </div>
             </section>
         </template>
         <template v-if="brandid == 10">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/Safari-Landing.jpg" alt="">
+                    <img class="img-fluid" src="/img/backgrounds/Safari-Landing.jpg" width="100%" alt="">
                 </div>
             </section>
         </template>
         <template v-if="brandid == 2">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/BATA_TOUGHEES.jpg" alt="">
+                    <img class="img-fluid" src="/img/backgrounds/BATA_TOUGHEES.jpg" width="100%" alt="">
                 </div>
             </section>
         </template>
          <template v-if="brandid == 18">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/patapata-LP.jpg" alt="">
+                    <img class="img-fluid" src="/img/backgrounds/patapata-LP.jpg" width="100%" alt="">
                 </div>
             </section>
         </template>
             <template v-if="brandid == 13">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/Sandak-LP.jpg" alt="">
+                    <img class="img-fluid" src="/img/backgrounds/Sandak-LP.jpg" width="100%" alt="">
                 </div>
             </section>
         </template>
          <template v-if="brandid == 16">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/Industrial-Lp.jpg" alt="">
+                    <img class="img-fluid" src="/img/backgrounds/Industrial-Lp.jpg" width="100%" alt="">
                 </div>
             </section>
         </template>
+
         <section class="slice pb-0 delimiter-top">
             <div class="container">
                 <div class="row row-grid">
                     <div class="col-lg-12">
-                       <blockquote class="py-1 px-5 rounded-right" v-if="brandid == 13">
+                       <blockquote class="py-1 px-5 rounded-right" v-if="brandid == 3">
                             <h3 class="h2 font-weight-700">BATA STORY</h3>
                             <p class="lead">
 
                               Innovation has been the foundation of our business since 1894.
-                               Our founder Tomáš Bata had a vision to <i>shoe mankind</i> by making high-quality, affordably priced footwear available to everyone. Tomáš dramatically changed the global shoe industry by creating hundreds of innovative advancements in shoe design, manufacturing processes and employee work conditions with his paradigm-breaking and socially conscious approach.
-                              Love Living In Bata Since 1894
+                               Our founder Tomáš Bata had a vision to shoe mankind by making high-quality, affordably priced footwear available to everyone. Tomáš dramatically changed the global shoe industry by creating hundreds of innovative advancements in shoe design, manufacturing processes and employee work conditions with his paradigm-breaking and socially conscious approach.
+                              <i>Love Living In Bata Since 1894</i>
 
                             </p>
 

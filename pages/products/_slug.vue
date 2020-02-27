@@ -37,26 +37,8 @@
                         <div class="col-lg-12">
                             <div class="row align-items-center mb-4">
                                 <div class="col-lg-5 mb-4 mb-lg-0">
-                                <span class="h2 mb-0 text-white d-block" style="text-transform: capitalize;">{{ product.name }}</span>
-                                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                                    <li class="breadcrumb-item">
-                                    <nuxt-link :to="{ name: 'index' }" class="text-normal">
-                                        Home
-                                    </nuxt-link>
-                                    </li>
-                                    <li class="breadcrumb-item">
-                                    <span class="text-light">Category</span>
-                                    <!-- <nuxt-link :to="{ name: 'products' }" class="text-normal">
-                                        Products
-                                    </nuxt-link> -->
-                                    </li>
-                                    <li class="breadcrumb-item">
-                                    <span class="text-light" style="text-transform: capitalize;">{{path}}</span>
-                                    <!-- <nuxt-link :to="{ name: path }" class="text-normal" style="text-transform: capitalize;">
-                                        {{path}}
-                                    </nuxt-link> -->
-                                    </li>
-                                </ol>
+
+
                                 </div>
                             </div>
                         </div>
