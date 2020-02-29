@@ -6,11 +6,11 @@
             </slick-slide>
             <slide v-for="(slide, i) in slidescount" :key="i" :index="i">
     </no-ssr>-->
- <section class="slice p-0 my-0">
-                <div class="container-fluid p-0 text-center">
-                    <img class="img-fluid" src="/img/backgrounds/newarrivals.JPG" alt="">
-                </div>
-            </section>
+    <section class="slice p-0 my-0">
+      <div class="container-fluid p-0 text-center">
+        <img class="img-fluid" src="/img/backgrounds/newarrivals.JPG" alt />
+      </div>
+    </section>
     <no-ssr>
       <carousel-3d
         :autoplay="true"
@@ -86,31 +86,26 @@
 
       <div class="container position-relative zindex-100">
         <div class="row row-grid">
-          <div class="col-lg-4 col-xs-6 mt-4" v-for="ad in adverts" :key="ad.id">
-            <nuxt-link
-              :to="{ name: 'categories-slug', params: { slug: ad.slug } }"
-              class="card border-0"
-              data-animate-hover="1"
-            >
+          <div class="col-lg-4 col-xs-6 mt-4">
+            <a href="/categories/casual-lace-up-shoes" class="card-title">
               <div class="animate-this">
-                <img
-                  :alt="ad.blinker"
-                  class="rounded z-depth-3 img-full"
-                  :src="ad.imagelink+'offer/'+ad.image"
-                />
-                <span class="mask bg-dark opacity-1"></span>
-                <span :class="'mask mask--hover opacity-4 bg-gradient-'+ad.gradient"></span>
-                <div class="card-img-overlay d-flex">
-                  <div class="col pt-2">
-                    <h1 class="h1 text-white text-capitalize mb-1">{{ad.title}}</h1>
-                    <h2
-                      class="h1 text-capitalize mb-1 animated pulse infinite text-danger"
-                    >{{ad.blinker}}</h2>
-                    <h6 class="text-white">{{ad.description}}</h6>
-                  </div>
-                </div>
+                <img src="img/casual.jpg" class="rounded z-depth-3 img-full" />
               </div>
-            </nuxt-link>
+            </a>
+          </div>
+          <div class="col-lg-4 col-xs-6 mt-4">
+            <a href="/brands/10" class="card-title">
+              <div class="animate-this">
+                <img src="img/safari.jpg" class="rounded z-depth-3 img-full" />
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-xs-6 mt-4">
+            <a href="/categories/casual-lace-up-shoes" class="card-title">
+              <div class="animate-this">
+                <img src="img/sneakers.jpg" class="rounded z-depth-3 img-full" />
+              </div>
+            </a>
           </div>
         </div>
 
@@ -189,30 +184,41 @@
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                <a href="/products/mc-dakota-7615095" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/ladies/mc-dakota-7615095.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                </a>
+                  <a href="/products/mc-dakota-7615095" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/ladies/mc-dakota-7615095.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/products/mc-dakota-7615095" class="card-title">MC-DAKOTA</a>
                     <span class="card-price">Ksh 3399</span>
                   </div>
                 </div>
               </div>
-                <div class="col-lg-3 col-sm-6 mb-5">
+              <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
-                > <a href="/products/stride-teller-5812566" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/ladies/stride-teller-5812566.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
+                >
+                  <a href="/products/stride-teller-5812566" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/ladies/stride-teller-5812566.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
                   </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/products/stride-teller-5812566" class="card-title">STRIDE TELLER</a>
@@ -220,36 +226,46 @@
                   </div>
                 </div>
               </div>
-                <div class="col-lg-3 col-sm-6 mb-5">
+              <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                 <a href="/products/flora-5512106" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/ladies/flora-5512106.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                 </a>
+                  <a href="/products/flora-5512106" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/ladies/flora-5512106.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/products/flora-5512106" class="card-title">FLORA</a>
                     <span class="card-price">Ksh 1999</span>
                   </div>
                 </div>
               </div>
-                <div class="col-lg-3 col-sm-6 mb-5">
+              <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                 <a href="/products/kaitlyn-insolia-6785510" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/ladies/kaitlyn-insolia-6785510.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                 </a>
+                  <a href="/products/kaitlyn-insolia-6785510" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/ladies/kaitlyn-insolia-6785510.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/products/kaitlyn-insolia-6785510" class="card-title">KAITLYN-INSOLIA</a>
                     <span class="card-price">Ksh 3399</span>
@@ -261,7 +277,7 @@
         </section>
       </div>
     </section>
-     <section class="slice overflow-hidden">
+    <section class="slice overflow-hidden">
       <!-- <div class="pt-5 position-absolute middle right-0 col-lg-7 col-xl-7 d-none d-lg-block">
                 <img alt="" src="/img/svg/ladyshopping.svg" class="img-fluid opacity-1">
       </div>-->
@@ -294,75 +310,95 @@
             <strong class="font-weight-700">MEN</strong>
           </h3>
         </div>
-  <section class="slice slice-sm bg-transparent" id="sct-products">
+        <section class="slice slice-sm bg-transparent" id="sct-products">
           <div class="container">
             <div class="row">
               <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                 <a href="/products/fern-8014881" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/men/fern-8014881.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                 </a>
+                  <a href="/products/fern-8014881" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/men/fern-8014881.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/products/fern-8014881" class="card-title">FERN</a>
                     <span class="card-price">Ksh 4999</span>
                   </div>
                 </div>
               </div>
-                <div class="col-lg-3 col-sm-6 mb-5">
+              <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                <a href="/products/sioux-8544080" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/men/sioux-8544080.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                </a>
+                  <a href="/products/sioux-8544080" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/men/sioux-8544080.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/products/sioux-8544080" class="card-title">SIOUX</a>
                     <span class="card-price">Ksh 4999</span>
                   </div>
                 </div>
               </div>
-                <div class="col-lg-3 col-sm-6 mb-5">
+              <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                <a href="/products/gordon-8817405" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/men/gordon-8817405.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                </a>
+                  <a href="/products/gordon-8817405" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/men/gordon-8817405.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/products/gordon-8817405" class="card-title">GORDON</a>
                     <span class="card-price">Ksh 2999</span>
                   </div>
                 </div>
               </div>
-                <div class="col-lg-3 col-sm-6 mb-5">
+              <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                <a href="/products/sven-8811213" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/men/sven-8811213.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                </a>
+                  <a href="/products/sven-8811213" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/men/sven-8811213.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/products/sven-8811213" class="card-title">SVEN</a>
                     <span class="card-price">Ksh 1999</span>
@@ -408,75 +444,95 @@
           </h3>
         </div>
 
-         <section class="slice slice-sm bg-transparent" id="sct-products">
+        <section class="slice slice-sm bg-transparent" id="sct-products">
           <div class="container">
             <div class="row">
               <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                <a href="/products/neil-1012020" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/kids/neil-1012020.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                </a>
+                  <a href="/products/neil-1012020" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/kids/neil-1012020.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/products/neil-1012020" class="card-title">NEIL</a>
                     <span class="card-price">Ksh 1999</span>
                   </div>
                 </div>
               </div>
-                <div class="col-lg-3 col-sm-6 mb-5">
+              <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                <a href="/products/norway-3613084" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/kids/norway-3613084.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                </a>
+                  <a href="/products/norway-3613084" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/kids/norway-3613084.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/products/norway-3613084" class="card-title">NORWAY</a>
                     <span class="card-price">Ksh 1999</span>
                   </div>
                 </div>
               </div>
-                <div class="col-lg-3 col-sm-6 mb-5">
+              <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                 <a href="/products/ulfr-1396028" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/kids/ulfr-1396028.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                 </a>
+                  <a href="/products/ulfr-1396028" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/kids/ulfr-1396028.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/products/ulfr-1396028" class="card-title">ULFR</a>
                     <span class="card-price">Ksh 1399</span>
                   </div>
                 </div>
               </div>
-                <div class="col-lg-3 col-sm-6 mb-5">
+              <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                <a href="/products/harmeet-1515966" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/kids/harmeet-1515966.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                </a>
+                  <a href="/products/harmeet-1515966" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/kids/harmeet-1515966.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/products/harmeet-1515966" class="card-title">HARMEET</a>
                     <span class="card-price">Ksh 1799</span>
@@ -523,83 +579,97 @@
           </h3>
         </div>
 
-         <section class="slice slice-sm bg-transparent" id="sct-products">
+        <section class="slice slice-sm bg-transparent" id="sct-products">
           <div class="container">
             <div class="row">
-
               <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                <a href="/brands/2" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/brands/toughees.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                </a>
+                  <a href="/brands/2" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/brands/toughees.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/brands/2" class="card-title">TOUGHEES</a>
-
                   </div>
                 </div>
               </div>
-                <div class="col-lg-3 col-sm-6 mb-5">
+              <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                <a href="/brands/10" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/brands/safari.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                </a>
+                  <a href="/brands/10" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/brands/safari.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/brands/10" class="card-title">SAFARI</a>
-
                   </div>
                 </div>
               </div>
-                <div class="col-lg-3 col-sm-6 mb-5">
+              <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                 <a href="/brands/13" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/brands/sandak.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                 </a>
+                  <a href="/brands/13" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/brands/sandak.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
                     <a href="/brands/13" class="card-title">SANDAK</a>
-
                   </div>
                 </div>
               </div>
-                <div class="col-lg-3 col-sm-6 mb-5">
+              <div class="col-lg-3 col-sm-6 mb-5">
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                <a href="/brands/16" class="card-title">
-                  <div class="card-image">
-                    <span>
-                      <img alt="SUPRIME" src="img/brands/industrials.jpg"
-                        class="img-center fadeInDown" width="100%" height="100%"/>
-                    </span>
-                  </div>
-                </a>
+                  <a href="/brands/16" class="card-title">
+                    <div class="card-image">
+                      <span>
+                        <img
+                          alt="SUPRIME"
+                          src="img/brands/industrials.jpg"
+                          class="img-center fadeInDown"
+                          width="100%"
+                          height="100%"
+                        />
+                      </span>
+                    </div>
+                  </a>
                   <div class="card-body pt-0 text-center px-2">
-                    <a href="/brands/16" class="card-title"> BATA INDUSTRIALS</a>
-
+                    <a href="/brands/16" class="card-title">BATA INDUSTRIALS</a>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </section>
