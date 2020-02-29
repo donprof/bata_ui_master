@@ -101,7 +101,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-xs-6 mt-4">
-            <a href="/categories/casual-lace-up-shoes" class="card-title">
+            <a href="/brands/5" class="card-title">
               <div class="animate-this">
                 <img src="img/sneakers.jpg" class="rounded z-depth-3 img-full" />
               </div>
