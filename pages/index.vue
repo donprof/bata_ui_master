@@ -27,8 +27,8 @@
   @swipe="handleSwipe"
   @lazyLoaded="handleLazyLoaded"
   @lazyLoadError="handleLazeLoadError">
-  <a href="/brands/4"><img src="/img/banners/banner1.jpg" width="100%" alt="banner1"></a>
-  <a href="/brands/7"><img src="/img/banners/banner2.jpg" width="100%" alt=""></a>
+  <a href="/brands/7"><img src="/img/banners/banner1.jpg" width="100%" alt="banner1"></a>
+  <a href="/brands/4"><img src="/img/banners/banner2.jpg" width="100%" alt=""></a>
   <a href="http://eu.sharingan.capillarytech.com/app/Bata_Microsite#!/authlogin"><img src="/img/banners/banner3.jpg" width="100%" alt=""></a>
         </slick-slide>
 
