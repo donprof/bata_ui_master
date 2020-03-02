@@ -12,23 +12,26 @@
       </div>
     </section>
     <no-ssr>
-      <carousel-3d
-        :autoplay="true"
-        :disable3d="true"
-        :autoplay-timeout="5000"
-        :display="2"
-        :space="1440"
-        :width="1280"
-        :height="370"
-        :clickable="true"
-        :controls-visible="true"
-      >
-        <slide v-for="(slide, i) in sliders" :index="i" :key="i">
-          <img :src="slide.imagelink+'banners/'+slide.image" />
-          <!-- <span class="title">You know</span> -->
-          <!-- <p>You know, being a test pilot isn't always the healthiest business in the world.</p> -->
-        </slide>
-      </carousel-3d>
+
+        <slick-slide
+  ref="slick"
+  :options="slickOptions"
+  @afterChange="handleAfterChange"
+  @beforeChange="handleBeforeChange"
+  @breakpoint="handleBreakpoint"
+  @destroy="handleDestroy"
+  @edge="handleEdge"
+  @init="handleInit"
+  @reInit="handleReInit"
+  @setPosition="handleSetPosition"
+  @swipe="handleSwipe"
+  @lazyLoaded="handleLazyLoaded"
+  @lazyLoadError="handleLazeLoadError">
+  <a href="/brands/4"><img src="/img/banners/banner1.jpg" alt="banner1"></a>
+  <a href="/brands/7"><img src="/img/banners/banner2.jpg" alt=""></a>
+  <a href="http://eu.sharingan.capillarytech.com/app/Bata_Microsite#!/authlogin"><img src="/img/banners/banner3.jpg" alt=""></a>
+        </slick-slide>
+
       <!-- <carousel-3d :disable3d="true" :autoplay-timeout="2000" :space="1290" :width="1260" :height="450" :clickable="false" :controls-visible="true">
                 <slide v-for="(slide, i) in sliders" :key="i" :index="i">
                     <figure>
@@ -815,12 +818,12 @@ export default {
   },
   data() {
     return {
-      slidescount: 7,
+      slidescount: 3,
       slickOptions: {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 2000
       },
       slides: [
         {
