@@ -28,6 +28,20 @@
                 </div>
             </section>
         </template>
+         <template v-if="brandid == 7">
+            <section class="slice p-0 my-0">
+                <div class="container-fluid p-0 text-center">
+                    <img class="img-fluid" src="/img/banners/banner1.jpg" width="100%" alt="">
+                </div>
+            </section>
+        </template>
+         <template v-if="brandid == 4">
+            <section class="slice p-0 my-0">
+                <div class="container-fluid p-0 text-center">
+                    <img class="img-fluid" src="/img/banners/banner2.jpg" width="100%" alt="">
+                </div>
+            </section>
+        </template>
             <template v-if="brandid == 13">
             <section class="slice p-0 my-0">
                 <div class="container-fluid p-0 text-center">

@@ -35,7 +35,40 @@
                 </div>
             </section>
         </template>
+ <template v-if="product.brand_id == 7">
+            <section class="slice pt-sm pb-4 d-flex align-items-end  bg-cover bg-size--cover" style="background-image: url('/img/backgrounds/Safari-BG.jpg');">
+                <span class="mask bg-danger opacity-0"></span>
+                <div class="container pt-lg">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row align-items-center mb-4">
+                                <div class="col-lg-5 mb-4 mb-lg-0">
 
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+         <template v-if="product.brand_id == 4">
+            <section class="slice pt-sm pb-4 d-flex align-items-end  bg-cover bg-size--cover" style="background-image: url('/img/backgrounds/Safari-BG.jpg');">
+                <span class="mask bg-danger opacity-0"></span>
+                <div class="container pt-lg">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row align-items-center mb-4">
+                                <div class="col-lg-5 mb-4 mb-lg-0">
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
         <template v-if="product.brand_id == 2">
             <section class="slice pt-sm pb-4 d-flex align-items-end  bg-cover bg-size--cover" style="background-image: url('/img/backgrounds/Toughees-BG.jpg');">
                 <span class="mask bg-danger opacity-0"></span>
