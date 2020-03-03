@@ -9,7 +9,7 @@
 
             <div class="container position-relative zindex-100">
                 <div class="mb-md text-center">
-                    <h3 class="mt-4">New <strong class="font-weight-700">arrivals</strong>.</h3>
+                    <h3 class="mt-4"> <strong class="font-weight-700">NEW ARRIVALS</strong></h3>
                 </div>
 
                 <section class="slice slice-sm bg-transparent" id="sct-products">
