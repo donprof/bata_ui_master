@@ -36,7 +36,7 @@
             </section>
         </template>
  <template v-if="product.brand_id == 7">
-            <section class="slice pt-sm pb-4 d-flex align-items-end  bg-cover bg-size--cover" style="background-image: url('/img/backgrounds/Safari-BG.jpg');">
+            <section class="slice pt-sm pb-4 d-flex align-items-end  bg-cover bg-size--cover" style="background-image: url('/img/backgrounds/northstar.jpg');">
                 <span class="mask bg-danger opacity-0"></span>
                 <div class="container pt-lg">
                     <div class="row">

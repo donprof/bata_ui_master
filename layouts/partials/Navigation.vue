@@ -117,7 +117,7 @@
                                         <div class="list-group">
                                             <span class="list-group-item list-group-item-action">
                                                 <div class="media d-flex align-items-center">
-                                                  
+
                                                     <div class="media-body ml-3">
                                                         <h6 class="mb-1 text-capitalize">{{category.name}}</h6>
                                                         <p class="mb-0">{{category.name}} categories.</p>
@@ -168,6 +168,10 @@
                                 </nuxt-link>
                             </div>
                         </li>
+                          <li class="nav-item" >
+                            <a class="nav-link text-uppercase" href="/latest" role="button">NEW ARRIVALS</a>
+                        </li>
+
                     </ul>
 
 
