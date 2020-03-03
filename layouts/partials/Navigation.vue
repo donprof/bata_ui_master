@@ -117,7 +117,7 @@
                                         <div class="list-group">
                                             <span class="list-group-item list-group-item-action">
                                                 <div class="media d-flex align-items-center">
-                                                    <img alt="Image placeholder" src="/img/icons/dusk/svg/in-progress.svg" class="img-saturate" style="width: 50px;">
+                                                  
                                                     <div class="media-body ml-3">
                                                         <h6 class="mb-1 text-capitalize">{{category.name}}</h6>
                                                         <p class="mb-0">{{category.name}} categories.</p>
