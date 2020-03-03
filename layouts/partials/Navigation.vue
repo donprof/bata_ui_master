@@ -109,6 +109,9 @@
 
                 <div class="navbar-collapse collapse" id="navbar-main-collapse" style="">
                     <ul class="navbar-nav align-items-lg-center">
+                       <li class="nav-item" >
+                            <a class="nav-link text-uppercase" href="/latest" role="button">NEW ARRIVALS</a>
+                        </li>
                         <template v-for="category in categories">
                             <template v-if="category.children.length">
                                 <li class="nav-item dropdown dropdown-animate" data-toggle="hover" :key="category.slug">
@@ -168,9 +171,7 @@
                                 </nuxt-link>
                             </div>
                         </li>
-                          <li class="nav-item" >
-                            <a class="nav-link text-uppercase" href="/latest" role="button">NEW ARRIVALS</a>
-                        </li>
+
 
                     </ul>
 
