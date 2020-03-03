@@ -8,7 +8,7 @@
     </no-ssr>-->
     <section class="slice p-0 my-0">
       <div class="container-fluid p-0 text-center">
- <a href="/categories/special-occasion">
+ <a href="/categories/flats">
    <img class="img-fluid" src="/img/backgrounds/newarrivals.JPG" alt />
    </a>
       </div>
