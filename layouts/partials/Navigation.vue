@@ -123,7 +123,11 @@
 
                                                     <div class="media-body ml-3">
                                                         <h6 class="mb-1 text-capitalize">{{category.name}}</h6>
-                                                        <p class="mb-0">{{category.name}} categories.</p>
+
+  <button class="btn btn-danger btn-block mt-3" type="button">
+                                <span >SHOP ALL</span>
+                            </button>
+
                                                     </div>
                                                 </div>
                                             </span>
@@ -131,7 +135,7 @@
                                                 <div class="row">
                                                     <div class="col-sm-4" v-for="child in category.children" :key="child.slug">
                                                         <div class="d-flex align-items-center">
-                                                            <span class="badge badge-md badge-pill badge-danger w-100 text-capitalize">{{ child.name }}</span>
+                                                            <span class="badge w-100 text-capitalize">{{ child.name }}</span>
                                                         </div>
 
                                                         <nuxt-link v-for="sub in child.subchildren" :key="sub.slug" :to="{ name: 'categories-slug', params: { slug: sub.slug } }" class="dropdown-item text-capitalize">

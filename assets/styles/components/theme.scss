@@ -3568,7 +3568,7 @@ input[type=submit].btn-block {
   padding: .25rem 1rem;
   text-align: inherit;
   white-space: nowrap;
-  color: #212529;
+  color: #000;
   border: 0;
   background-color: transparent
 }
@@ -3576,14 +3576,16 @@ input[type=submit].btn-block {
 .dropdown-item:focus,
 .dropdown-item:hover {
   text-decoration: none;
-  color: #16181b;
-  background-color: #f5f9fb
+  color: #000;
+  border: 1px solid #000;
+  background-color: transparent
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
   text-decoration: none;
-  color: #16181b;
+  color: #000;
+  border: 1px solid #000;
   background-color: transparent
 }
 
@@ -5427,15 +5429,16 @@ input[type=submit].btn-block {
 
 
 .badge {
-  font-size: 83%;
-  font-weight: 700;
+  font-size: 100%;
+  font-weight:bolder;
   line-height: 1;
   display: inline-block;
   padding: .25rem .625rem;
   text-align: center;
   vertical-align: baseline;
   white-space: nowrap;
-  border-radius: .25rem
+  color: #000;
+
 }
 
 .badge:empty {
@@ -14313,7 +14316,7 @@ button.bg-lighter:hover {
 }
 
 .dropdown-menu {
-  font-size: .875rem
+  font-size: .9rem
 }
 
 .dropdown-menu .dropdown-item>i,
@@ -15876,7 +15879,7 @@ textarea[resize=horizontal] {
 }
 
 .navbar-nav .nav-link {
-  font-family: Montserrat, sans-serif;
+  font-family: Montserrat SemiBold,Arial,sans-serif;
   font-size: .875rem;
   font-weight: 600;
   transition: all .15s linear;
@@ -18823,12 +18826,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .select2-results__option:hover {
-  color: #16181b
+  color: #000
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected],
 .select2-container--default .select2-results__option[aria-selected=true] {
-  color: #16181b;
+  color: #000;
   background-color: transparent
 }
 
