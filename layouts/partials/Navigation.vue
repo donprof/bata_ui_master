@@ -123,11 +123,11 @@
 
                                                     <div class="media-body ml-3">
                                                         <h6 class="mb-1 text-capitalize">{{category.name}}</h6>
-   <nuxt-link :key="category.slug" :to="{ name: 'categories-slug', params: { slug: category.slug } }">
+   <!--<nuxt-link :key="category.slug" :to="{ name: 'categories-slug', params: { slug: category.slug } }">
                                                            <button class="btn btn-danger btn-block mt-3" type="button">
                                                             <span class="text-capitalize">Shop All {{category.name}}</span>
                                                         </button>
-                                                        </nuxt-link>
+                                                        </nuxt-link>-->
 
 
                                                     </div>
