@@ -9,7 +9,7 @@
     <section class="slice p-0 my-0">
       <div class="container-fluid p-0 text-center">
  <a href="/latest">
-   <img class="img-fluid" src="/img/backgrounds/newarrivals.JPG" alt />
+   <img class="img-fluid" src="/img/backgrounds/donation.jpg" alt="" width="100%" />
    </a>
       </div>
     </section>
@@ -120,6 +120,7 @@
         </div>-->
       </div>
     </section>
+
     <!--
         <section v-for="sl in salesbanner" :key="sl.id" class="slice slice-sm bg-cover bg-size--cover" :style="'background-position: 15% 75%; background-image: url('+sl.imagelink+'/wavebanner/'+sl.image+')'">
             <div class="shape-container" data-shape-style="wavify" data-shape-position="top" data-shape-orientation="inverse">
@@ -189,12 +190,12 @@
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                  <a href="/products/mc-dakota-7615095" class="card-title">
+                  <a href="/products/wesley-7615095" class="card-title">
                     <div class="card-image">
                       <span>
                         <img
                           alt="SUPRIME"
-                          src="img/ladies/mc-dakota-7615095.jpg"
+                          src="img/ladies/wesley-7615095.jpg"
                           class="img-center fadeInDown"
                           width="100%"
                           height="100%"
@@ -203,7 +204,7 @@
                     </div>
                   </a>
                   <div class="card-body pt-0 text-center px-2">
-                    <a href="/products/mc-dakota-7615095" class="card-title">MC-DAKOTA</a>
+                    <a href="/products/wesley-7515290" class="card-title">WESLEY</a>
                     <span class="card-price">Ksh 3399</span>
                   </div>
                 </div>
@@ -212,12 +213,12 @@
                 <div
                   class="card card-product no-border shadow shadow--hover animated bounceIn faster"
                 >
-                  <a href="/products/stride-teller-5812566" class="card-title">
+                  <a href="/products/mc-ladies-footwear-7619004" class="card-title">
                     <div class="card-image">
                       <span>
                         <img
                           alt="SUPRIME"
-                          src="img/ladies/stride-teller-5812566.jpg"
+                          src="img/ladies/mc-ladies-footwear-7619004.jpg"
                           class="img-center fadeInDown"
                           width="100%"
                           height="100%"
@@ -226,7 +227,7 @@
                     </div>
                   </a>
                   <div class="card-body pt-0 text-center px-2">
-                    <a href="/products/stride-teller-5812566" class="card-title">STRIDE TELLER</a>
+                    <a href="/products/mc-ladies-footwear-7619004" class="card-title">MC LADIES FOOTWEAR</a>
                     <span class="card-price">Ksh 2999</span>
                   </div>
                 </div>
@@ -240,7 +241,7 @@
                       <span>
                         <img
                           alt="SUPRIME"
-                          src="img/ladies/flora-5512106.jpg"
+                          src="img/ladies/cherri-6716012.jpg"
                           class="img-center fadeInDown"
                           width="100%"
                           height="100%"
@@ -249,8 +250,8 @@
                     </div>
                   </a>
                   <div class="card-body pt-0 text-center px-2">
-                    <a href="/products/flora-5512106" class="card-title">FLORA</a>
-                    <span class="card-price">Ksh 1999</span>
+                    <a href="/products/cherri-6716012" class="card-title">CHERRI</a>
+                    <span class="card-price">Ksh 2799</span>
                   </div>
                 </div>
               </div>

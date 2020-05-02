@@ -88,9 +88,9 @@
                             <li class="nav-item" v-if="$auth.loggedIn">
                                 <a href="#" @click.prevent="logout" class="nav-link"><i class="far fa-power-off"></i> Logout</a>
                             </li>
-                            <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <nuxt-link :to="{ name: 'locations' }" class="nav-link"><i class="fas fa-map-marked-alt"></i></nuxt-link>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>
